@@ -5,10 +5,10 @@ import wave
 def voice_recorder(output_filename, seconds_of_audio):
     """Record a voice of target within PyAudio interface with device(7) - USB MICRO"""
 
-    chunk = 2024  # Record in chunks of 1024 samples
+    chunk = 1024  # Record in chunks of 1024 samples
     sample_format = pyaudio.paInt16  # 16 bits per sample
     channels = 2  # Stereo
-    fs = 44100  # Record at 44100 samples per second
+    fs = 16000
 
     p = pyaudio.PyAudio()  # Create an interface to PortAudio
 
